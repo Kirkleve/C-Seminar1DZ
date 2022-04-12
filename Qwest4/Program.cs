@@ -5,19 +5,19 @@
 
 Console.Write("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
-int a = N%2;
+int a = 0;
 
-while (a <= N)
+while (a < N)
 {
     if ((a % 2) == 0)
     {
         a = a + 2;
+        if(a > N)
+        {
+            break;
+        }
+        else
         Console.Write( a + " ");
-    
-    }
-    else
-    {
-        a++;
     }
 }
   
